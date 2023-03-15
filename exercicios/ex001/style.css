@@ -1,0 +1,9 @@
+#aumenta{
+    font-size: 50px;
+}
+ul{
+    list-style-type: '\0020\0020';
+    columns: 2;
+    list-style-position: inside;
+}
+

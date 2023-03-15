@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><h1>Eventos DOM</h1></header>
+<main>
+    <div id="interaja">
+        <p>Interaja </p>
+    </div>
+    <h1>Tipos de evento DOM</h1>
+    <p>O navegador dispara muitos eventos. Uma lista completa está disponível no MDN, mas aqui estão alguns dos tipos e nomes de eventos mais comuns:</p>
+    <ul>
+        <li><strong>eventos de mouse (MouseEvent):</strong> mousedown, mouseup, click, dblclick, mousemove, mouseover, mousewheel, mouseout, contextmenu</li>
+        <LI><strong>eventos de toque (TouchEvent):</strong> touchstart, touchmove, touchend, touchcancel</LI>
+        <li><strong>eventos de teclado (KeyboardEvent):</strong> keydown, keypress, keyup</li>
+        <li><strong>eventos de formulário:</strong> focus, blur, change, submit</li>
+        <li><strong>eventos de janela:</strong> scroll, resize, hashchange, load, unload</li>
+    </ul>
+    <p>Perceba que alguns eventos são específicos do dispositivo. Eventos de toque são disparados apenas em dispositivos como smartphones e laptops sensíveis ao toque. Eventos de mouse são disparados na maioria dos navegadores, mas às vezes eles são mais lentos que os eventos de toque nos smartphones. O evento "mouseover" não é disparado em smartphones, já que não é possível deixar o cursor sobre a tela sem tocá-la.</p>
+    <p>Alguns desenvolvedores adicionam listeners para os eventos de toque e de mouse, para que sua interface responda rapidamente em todos os dispositivos. Outros desenvolvedores usam bibliotecas como FastClick que descobre automaticamente quais eventos esperar em cada dispositivo (é isso que fazemos aqui na Khan Academy). Como você está apenas começando, o mais fácil é esperar eventos de mouse, porque eles são mais universais.</p>
+    <p>Uma função ou funcionalidade em JS é um conjunto de códigos (linhas) que vão ser executadas somente quando o evento ocorrer. Ex: programei 10 linhas ( um bloco, que é delimitado por chaves {} e tem o nome de funcion (que , por sua vez, também tem um nome que termina em () ) que só acontecerá quando eu clicar dentro da div. </p>
+    <p>Para ver como fazer, olhe no código fonte!!!</p>
+</main>
+    <script>
+        var a = window.document.getElementById('interaja')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+        function clicar() {
+            a.innerText = 'Clicou!'
+        }
+        function entrar(){
+            a.innerText='Entrou'
+        }
+        function sair(){
+            a.innerText='Saiu'
+        }
+    </script>
+    <footer>
+        <button><a href="index.html">Iniciando Estudos com DOM</a></button>
+        <button><a href="somando.html">Somando</a></button>
+    </footer>
+</body>
+</html>

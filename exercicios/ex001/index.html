@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciando no JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>JavaScript</h1>
+    </header>
+    <main>
+        <button onclick="CliqueAqui ()">Clique Aqui</button>
+        <p>Cliente é o computador, o celular. O servidor fornece os dados para podemos acessar e os clientes são quem querem os arquivos. Js é uma tecnologia client side. </p>
+        <p>Com Js podemos fazer varias mudanças com poucos comandos. A tag HTML para se adicionar o JS é a tag SCRIPT. Dentro dela que será desenvolvido o código em JS.</p>
+        <p>Um sinal de <strong id="aumenta">=</strong> no JS significa <strong>RECEBE</strong>. ex: vaga a1= carro1 (vaga a1 recebe carro a1). A palavra <strong>NULL</strong> é um atributo que indica que não tem nada na <strong>variável (VAR)</strong>. Quando um valor é colocado dentro de uma variável chamamos de <strong>ATRIBUIÇÃO</strong>. </p>
+        <p>As variáveis chamam-se <strong>IDENTIFICADORES</strong>. Pode começar com <strong>letras, $ ou _.</strong> Não podem começar com números. É possivel usar <strong>letras</strong> ou <strong>números</strong>. É possível usar <strong>acentos</strong> e <strong>símbolos</strong>. Não pode conter <strong>espaços</strong>. E, não pode ser <strong>palavras reservadas</strong>. Para botar palavras como valor das variaveis, é necessário usar <strong>ASPAS ', " ou `crase</strong>. Uma <strong>STRING</strong> é uma informação em <strong>letras</strong>, <strong>cadeias de caracteres </strong> e <strong>combinação de numeros</strong>, como um CPF, por exemplo. Números inteiros, números reais são chamados de <strong>number</strong> Valores como <strong>true</strong> e <strong>false</strong> são chamados de <strong>boolean</strong>. Esses são os 3 tipos primitivos principais. Mas, existem muitos outros tipos primitivos.</p> 
+        <p>Para abrir o NodeJs, basta abrir o Visual Code e clicar em <strong>TERMINAL</strong>, na parte de cima.</p>
+        <div> 
+            <h2>Tipos Primitivos</h2>
+            <ul>
+                <li>Number - <small>Infinity, <abbr title="Not a Number">NaN</abbr></small></li>
+                <li>String <small>(uma informação entre ", ', `)</small></li>
+                <li>Boolean</li>
+                <li>Null</li>
+                <li>Undefined</li>
+                <li>Object - <small>Array (uma informação entre [], {},</small></li> 
+                <li>Funcion</li>
+            </ul>
+        <h2>Transformando string em número</h2>
+        <p>Para converter uma string em números podemos usar <strong>Number.parseInt(numero)</strong>, que converte numeros inteiros. E, <strong>Number.parseFloat(numero)</strong> para converter numeros reais (com pontos) ou ainda pode-se usar somente <strong>Number.</strong> .Olhe codigo fonte pra maiores explicações.</p>
+        <h2>Transformando número em string</h2>
+        <p>Para converter um numero em string podemos usar <strong>String(valor)</strong> ou <strong>(o que eu quero converter)toString()</strong>.</p>
+            
+    </main>
+        
+    <script>
+        
+        window.alert('Chupa, eu to programando em JS, vinhado')//alert aparece um alerta quando a pagina é aberta//
+        //window.confirm('Está gostando de JS?')//confirm abre uma caixa confirmando algo que vc escreveu//
+        var nome = window.prompt('Qual seu nome?') // prompt abre uma caixa para poder escrever texto//
+        function CliqueAqui (){
+            window.alert (`${nome} vc clicou mesmo, EITA!`) //no lugar do VAR, pode ser LET também//
+        }
+        var n1 =Number.parseInt(window.prompt('Digite um número inteiro'))
+        var n2 =Number.parseInt( window.prompt('Digite outro número inteiro'))//window.prompt trás sempre uma string como resposta//
+        var r =n1+n2
+        window.alert(`A soma dos valores é ${r}`)
+    </script>
+    <footer>
+        <div>
+        <p>Lista de livros para comprar</p>
+        <div>
+            <ul>
+                <li><a href="https://produto.mercadolivre.com.br/MLB-1065522895-javascript-o-guia-definitivo-_JM?matt_tool=53925197&matt_word=&matt_source=google&matt_campaign_id=14300459470&matt_ad_group_id=124587331623&matt_match_type=&matt_network=g&matt_device=c&matt_creative=539490865652&matt_keyword=&matt_ad_position=&matt_ad_type=pla&matt_merchant_id=565571201&matt_product_id=MLB1065522895&matt_product_partition_id=1802648343497&matt_target_id=aud-659781599642:pla-1802648343497&gclid=Cj0KCQiA3eGfBhCeARIsACpJNU9xlbvH9VfJDP8YtXzyY6AON_wkjACw-Dbrc615S4SU54KeL_m8s2AaAn55EALw_wcB">Livro Javascript O guia Definitivo</a></li>
+                <li><a href="https://www.amazon.com.br/Estruturas-Dados-Algoritmos-Com-Javascript/dp/8575226932">Estruturas de dados e algoritimos com JavaScript</a></li>
+            </ul>
+        </div>
+        <button><a href="pagina2.html">Continuação</a></button>
+    </footer>
+</body>
+</html>

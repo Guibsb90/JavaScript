@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repetição</title>
+</head>
+<body>
+    <header>
+        <h1>Repetição</h1>
+    </header>
+    <section>
+        <h2>O uso do while (enquanto)</h2>
+        <p>Para estabelecer uma repetição, usamos while (condição) e criar um bloco ({}). Vamos exemplificar abaixo com um exemplo simples de uma função de comer as fatias de uma pizza.</p>
+        <div>
+            <pre>
+                função ComerPizza()
+                function comerPizza(){
+                    while(temFatia()){
+                        comerFatia()
+                    }
+                }
+            </pre>
+            <p>Essa estrutura evita de ter que, por exemplo, repetir o comerFatia por diversas vezes, pois a repetição sempre fará um teste lógico no inicio e somente sairá do looping quando a resposta não for verdadeira (false). Temos como fazer a estrutura pelo caminho inverso, mandando fazer algo enquanto tiver tal condição. Exemplificarei abaixo:</p>
+            <div>
+                <pre>
+                    do{
+
+                    }wile (condição)
+                </pre>
+                <p>Para ver um exemplo, olhe o código fonte.</p>
+            </div>
+        </div> 
+        <button onclick="cont()">Clique aqui</button >
+    </section>
+    <script src="script.js"></script>
+    
+</body>
+</html>

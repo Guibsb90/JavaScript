@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Continuação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <head><h1>Operadores no JS</h1></head>
+    <main>
+        <button onclick="inicio()">Clique aqui</button>
+        <div>
+            <ol>
+                <li><strong><h2>aritimeticos.</h2> </strong><p>São os operadores aritimeticos ( +, - , *, /, %[operador de resto da divisão inteira], **[operador de potenciação]).</p></li>
+                <li><strong><h2>atribuição</h2> </strong><p>O <strong id="aumenta">=</strong> (recebe) é uma atribuição simples.</p> <p>Temos também a auto-atribuição. Exemplo: var n=2  n-n+4 , n=n-5.</p> <p>Podemos fazer <strong>simplificações</strong>.</p></li>
+                <div style="background-color: rgba(83, 77, 77, 0.37); width: 800px ; margin: auto;">
+                    <ul type="square">
+                            <li><strong>n=n+4</strong>  pode escrever assim: <strong>n+=4</strong></li>
+                            <li><strong>n=n-5</strong>  pode escrever assim: <strong>n-=5</strong></li>
+                            <li><strong>n=n*4</strong>  pode escrever assim: <strong>n*=4</strong></li>
+                            <li><strong>n=n/2</strong>  pode escrever assim: <strong>n/=2</strong></li>
+                            <li><strong>n=n**2</strong> pode escrever assim: <strong>n**=2</strong></li>
+                            <li><strong>n=n%5</strong>  pode escrever assim: <strong>n%=5</strong></li>
+                        </div>
+                    </ul>
+                    <p>Operador de pré incremento | x=x+1 pode ser x++ e x=x-1 pode ser x--|</p>
+                                    
+                </div>
+                <ol start="3">
+                    <li><strong><h2>relacionais</h2></strong>  <p>Operador de identidade | == (significa igualdade) != (significa diferente). > maior e < menor </p><p>Operador de identidade restrita| === (identidade restrita: verifica se são tipos iguais de variáveis. Ex: sao duas strings, dois numeros, etc) e !== desigualdade restritiva.</p></li>
+                    <li><strong><h2>lógicos</h2></strong> <p>Operadores lógicos| ! é o operador de negação, && é o operador de conjunção ( E na lógica ) e || é a Disjunção. Tanto a disjunção quanto a conjunção tem duplo valor lógico ( um de cada lado). A conjunção só aceita 2 valores true pra dar true. o resto, é false. Na disjunção, basta que um seja true para o resultado seja true. </p><p>A ordem dos operadores lógicos é : NÃO, E depois OU.</p></li>
+                    <li><strong><h2>ternário</h2></strong> É a ? e : aparecendo na mesma expressão. Ele faz um teste logico e pergunta se é uma resposta ou a outra. Ex: var media = 9. Dai, media > 8?APROVADO:REPROVADO (media eh maior que 8? se sim, aprovado. se não, reprovado)</li>
+                </ol>
+            </ol>
+        </div>
+    </main>
+    <script>
+        function inicio(){
+
+        var nome = window.prompt('Qual é seu nome?')
+        var n1 = window.prompt('Digite seu salário')
+        window.alert(`${nome}, seu salário é ${n1.toLocaleString('pt-BR' , {style: 'currency', currency: 'BRL'})}.`)
+        }
+        
+    </script>
+    <footer>
+        <button><a href="index.html">Voltar</a></button>
+    </footer>
+</body>
+</html>

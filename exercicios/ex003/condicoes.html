@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header><h1>Condições</h1></header>
+    <main>
+        <div>
+            Digite a Velocidade: <input type="number" name="txtvel" id="txtvel"> <input type="button" value="veriricar" onclick="Multa()">
+            
+        </div>
+        <div id="res">
+
+        </div>
+        <h1>If (se) e Else (se não)</h1>
+        
+        <p>Para criar um bloco de condição, escreva if(condição){  } e para criar o outro else{}.</p>
+        <h2>Tipos de Condição</h2>
+        <p>Condição simples - if (condição) { true }. Só tem um bloco e caso a condição seja falsa, não acontecerá nada.</p>
+    <p>Condição composta - if (condição) { true } num bloco e else (condição){} no outro </p>
+    </main>
+    <script>
+         //para usar o querySelector, dentro das (), tem que botar O NOME DA TAG seguida de # para id e . para classe e o nome respectivo usado//
+        function Multa(){
+            var vel= window.document.querySelector('input#txtvel')
+            var res= window.document.querySelector('div#res')
+            var Vel = Number(vel.value)
+            res.innerHTML = `<p>Sua velocidade atual é de ${Vel}</p>`
+            if (Vel >= 50){
+                res.innerHTML += `<p><strong>MULTADO</strong></p>`
+                
+            }
+            else{
+                res.innerHTML +=`<p>BOM DIA</p>`
+            }
+        }
+    </script>
+    <footer><button><a href="condicoesaninhadas.html">Condições Aninhadas</a></button></footer>
+</body>
+</html>

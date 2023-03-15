@@ -1,0 +1,20 @@
+#dom{
+    width: 40%;
+    height: 40%;
+
+}
+header{
+    font-size: x-large;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+#interaja{
+    width: 150px;
+    height: 150px;
+    background-color: blueviolet;
+    text-align: center;
+    border-radius: 15px;
+    line-height: 150px;
+     
+}

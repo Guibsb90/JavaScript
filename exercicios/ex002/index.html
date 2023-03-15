@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <Header><h1>Iniciando estudos com DOM</h1></Header>
+    <main>
+        <h1>DOM</h1>
+        <p id="primeiro">DOM, Document Object Model , é um conjunto de objetos dentro do navegador que vai dar acesso aos componentes internos do seu website. Árvore DOM começa da raiz do navegador (window). Dentro do window, temos varios objetos como: location, document, history, etc. Dentro do document temos o html, que tem dentro head e body. (está exemplificado na imagem abaixo) </p>
+        <img id="dom" src="midias/arvore-dom.png" alt="">
+        <p>Qualquer coisa dentro da árvore chama-se elemento.</p>
+        <h2>Selecionando os elementos por:</h2>
+        <p>-Marca = getElementsByTagName() {da pra selecionar mais de um objeto}</p>
+        <p>-ID = getElementById()</p>
+        <p>-Nome = getElementsByName()</p>
+        <p>-Class = getElementsByClassName()</p>
+        <p>-Seletor = querySelector() ou querySelectorAll()</p>    
+        <p>Toda vez que for mais de um elemento (estiver escrito elementS, como neste caso: var p1 = window.document.getElementsByTagName('p')[0]), no fim, para funcionar, terá que adicionar um valor dentro dos colchetes [] de 0 até o numero maximo -1 de elementos presentes. Exemplo seria se usasse o ElementsByTagName e usasse a tag P. Vc teria que contar os parágrafos para poder saber a numeração certa para botar de parametro se não o paragrafo escolhido seria diferente do que vc estava planejando. O 1 sempre começa com 0 e assim vai.</p> 
+        <p>Para usar o Seletor, podemos fazer desta forma: var d = window.document.querySelector('div#msg')[dentro dos parenteses, abre aspas simples e bota a tag e classe ou id # ou .]</p>   
+        <script>
+         var p1 = window.document.getElementsByTagName('p')[0]//essa linha fala pra dar um valor para p1 que seja um elemento dentro de window, document e que seja uma tag P. dentro dos [] pode-se escrever um numero (de 0 até o numero maximo de tags P, por exemplo [menos um, pois o primeiro é 0])//   
+         var p2 = window.document.getElementById('primeiro') 
+        </script>
+    </main>
+    <footer>
+        <button><a href="eventosdom.html">Eventos DOM</a></button>
+    </footer>
+</body>
+</html>
