@@ -32,7 +32,8 @@ function Resultado(){
 
     if(velocidade > velocidade2){
     res.innerHTML = (`O ${nome.value} é o mais rapido.`)
-    }else{
+    }if(velocidade == velocidade2){
+    res.innerHTML = ("Empate")}else{
     res.innerHTML = (`O ${nome2.value} é o mais rapido.`)
     }
     
