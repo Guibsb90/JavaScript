@@ -10,13 +10,13 @@ fieldset#campo{
     display: inline;
     border-radius: 10px;
     margin-left: 380px;
-    background-color: rgba(127, 255, 212, 0.699);
+    background-color: rgba(16, 170, 241, 0.699);
 }
 fieldset#campo2{
     width: fit-content;
     display: inline;
     border-radius: 10px;
-    background-color: rgba(127, 255, 212, 0.699);    
+    background-color: rgba(16, 170, 241, 0.699);    
 }
 #res{
     margin-top: 50px;

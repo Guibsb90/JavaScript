@@ -1,0 +1,15 @@
+body{
+    background-color:blanchedalmond ;
+}
+header{
+    text-align: center;
+}
+fieldset{
+    background-image:linear-gradient(to left top, blue, red);
+    margin-left: 34%;
+    position: absolute;
+    width: 400px;
+    display: inline-block;
+    height: 400px;
+    border-radius: 20px;
+}
