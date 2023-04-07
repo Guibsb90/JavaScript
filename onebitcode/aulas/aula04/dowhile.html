@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do While</title>
+</head>
+<body>
+    <header>
+        <h1>Do While</h1>
+    </header>
+    <main>
+        <p>A estrutura de repetição <strong>do while</strong> é muito parecido com o while, porém ele garante que o bloco de código será executado pelo menos umam vez, mesmo que a condição seja falsa.</p>
+        <p>No <strong>do while</strong> a primeira verificação da condição só acontece depois que o bloico foi executado uma vez.</p>
+        <p>FAÇA alguma coisa ENQUANTO condição.</p>
+        <p>Sintaxe:</p>
+        <pre>
+            var resultado = '';
+            var i = 0;
+            do {
+                i += 1;
+                resultado += i + ' ';
+            } while (i &lt; 6);
+            document.innerHTML = resultado;
+        </pre>
+    </main>
+    <script src="dowhile.js"></script>
+</body>
+</html>
