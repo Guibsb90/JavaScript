@@ -25,6 +25,23 @@
         <p>Para dividir e pegar uma parte do array e salvar em outro, usamos .slice(0,4){os valores são referencias de quais indices serão usados para fazer a copia dos elementos. O último numero tem que ser subtraido de 1. No exemplo dado, iria da 1 a 4 posiçao , lembrando que os arrays começam na posiçao 0 } </p>
         <p>Para concatenar arrays, usamos .concat()</p>
         <p>Para remover um grupo de elementos do array, usamos .splice(indice, 1,, "gendalf, o Cinzento")Dentro, botamos o numero do indice e a quantidade que é pra ser excluida a partir dele, e, depois, o que irá substitui-lo.</p>
+        <br>
+        <p>Para Iterar (mostrar os elementos do array 1 por 1), usamos a estrutura for. <br>
+        <pre>
+            // Defina o array com os nomes das pessoas
+let pacientes = ["Maria", "João", "Ana", "Pedro"];
+
+// Inicialize a mensagem que será exibida no alert
+let mensagem = "";
+
+// Itere sobre os elementos do array e adicione-os à mensagem
+for (let i = 0; i < pacientes.length; i++) {
+  mensagem += "Paciente " + (i + 1) + ": " + pacientes[i] + "\n";
+}
+
+// Exiba a mensagem no alert
+alert(mensagem);
+        </pre></p>
     </main>
 </body>
 </html>
