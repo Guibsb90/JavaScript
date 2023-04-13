@@ -1,4 +1,4 @@
-let imoveis = {}
+let imoveis = []
 let opçao = ""
 do {
         opçao = prompt(
@@ -10,24 +10,35 @@ do {
         )
     switch(opçao){
         case "1":
-           let nome = prompt("Qual o nome do imóvel?")
+            let imovel = {}
+            imovel.proprietario = prompt("Informe o nome do proprietário do imóvel:")
+            imovel.quartos = prompt("Quantos quartos possui o imóvel?")
+            imovel.banheiros = prompt("Quantos banheiros possui o imóvel?")
+            imovel.garagem = prompt("O imóvel possui garagem? (sim/não)")
 
-           imoveis[nome]= {}
-
-           imoveis[nome]["Nome"] = prompt("Qual o nome do proprietário do imóvel?") 
-           imoveis[nome]["Quarto"] = prompt("Quantos quartos tem o imóvel?")
-           imoveis[nome]["Banheiro"] = prompt("Quantos banheiros possui o imóvel?")
-           imoveis[nome]["Garagem"] = prompt("O imóvel possui garagem?")
+            let confirmaçao = confirm(
+                "Você quer salvar esse imóvel?\n"+
+                "\nProprietário: " + imovel.proprietario+
+                "\nQuartos:" + imovel.quartos+
+                "\nBanheiros:" + imovel.banheiros+
+                "\nPossui garagem? " + imovel.garagem
+            )
+            if (confirmaçao){
+                imoveis.push(imovel)
+            }         
            break
         case "2":
-            let listaImoveis = "Aqui estão os imóveis cadastrados:\n";
-            for (let imovel in imoveis) {
-                listaImoveis += "\n" + imovel + ":";
-                for (let propriedade in imoveis[imovel]) {
-                    listaImoveis += "\n\t" + propriedade + ": " + imoveis[imovel][propriedade];
-                }
-            }
-            alert(listaImoveis);
+            for ( let i = 0 ; i < imoveis.length  ; i++ ){
+                alert(
+                    "Imóvel " + (i+1)+
+                    "\nProprietário:" + imoveis[i].proprietario +
+                    "\nQuartos: " + imoveis[i].quartos+
+                    "\nBanheiros: " + imoveis[i].banheiros+
+                    "\nPossui garagem? " + imoveis[i].garagem
+
+                )   
+            }           
+    
             break
         case "3":
             alert("Saindoo....")
