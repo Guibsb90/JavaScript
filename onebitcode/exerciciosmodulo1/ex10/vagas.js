@@ -27,24 +27,23 @@ do {
 
         case "2":
             let novaVaga = {}
-            novaVaga.nome = prompt("Qual o nome da vaga?")
-            novaVaga.descriçao = prompt("Descreva a vaga")
-            novaVaga.dataLimite = prompt("Data limite pra o anuncio")
+            novaVaga.nome = prompt("Informe o nome para a vaga:")
+            novaVaga.descriçao = prompt("Descreva a vaga:")
+            novaVaga.dataLimite = prompt("Data limite pra o anuncio (dd/mm/aa):")
             novaVaga.indice = vagaEmprego.length
             novaVaga.indice++
             novaVaga.ncandidatos = 0
             novaVaga.candidatoNome = []
-            let opçaovaga = prompt("Deseja Salvar? (s/n)")
+            let opçaovaga = confirm("Deseja Salvar?")
             switch (opçaovaga) {
-                case "s":
+                case true:
                     console.log(novaVaga.indice)
                     vagaEmprego.push(novaVaga)
                     break
 
-                case "n":
+                case false:
                     break
-                default:
-                    alert("Opção inválida")
+                
             }
 
 
@@ -90,20 +89,19 @@ do {
             
             alert("Informações da vaga: \n"+ resumovaga )
             
-            let opçaonome = prompt("\nGostaria de salvar as alterações? (s/n)")
+            let opçaonome = confirm("\nGostaria de salvar as alterações?")
 
             switch (opçaonome) {
-                case "s":
+                case true:
                     
                     console.log(indiceVaga)
                     vagaEmprego[indiceVaga -1].candidatoNome.push(nomeCandidato)
                     vagaEmprego[indiceVaga -1].ncandidatos += 1
                     alert("Nome inserido coms sucesso! ")
                     break
-                case "n":
+                case false:
                     break
-                default:
-                    alert("opção incorreta")
+                
             }
 
 
@@ -124,16 +122,14 @@ do {
 
             alert("Informações da vaga: \n"+ resumovaga2 )
             
-            let decisao = prompt("Quer prosseguir com e excluir a vaga? (s/n)")
+            let decisao = confirm("Quer prosseguir com e excluir a vaga?")
             switch(decisao){
-                case "s":
+                case true:
                     vagaEmprego.splice(indiceVaga2 -1, 1)
                     break
-                case "n":
+                case false:
                     break
-                default:
-                    alert("Opção inválida...")
-                    break
+                
             }
             
             break
