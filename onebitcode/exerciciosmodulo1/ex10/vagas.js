@@ -97,7 +97,7 @@ do {
                     console.log(indiceVaga)
                     vagaEmprego[indiceVaga -1].candidatoNome.push(nomeCandidato)
                     vagaEmprego[indiceVaga -1].ncandidatos += 1
-                    alert("Nome inserido coms sucesso! ")
+                    alert("Nome inserido com sucesso! ")
                     break
                 case false:
                     break
