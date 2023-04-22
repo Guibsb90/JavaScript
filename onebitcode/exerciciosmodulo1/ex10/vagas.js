@@ -77,7 +77,7 @@ do {
 
             }
 
-            let nomeCandidato = prompt("Qual seu nome?")
+            let nomeCandidato = prompt("Qual nome do candidato(a)?")
 
             let vaga = vagaEmprego[indiceVaga-1]
 
