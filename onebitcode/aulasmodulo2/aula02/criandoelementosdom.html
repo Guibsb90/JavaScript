@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criando elementos DOM</title>
+</head>
+<body>
+    <header>
+        <h1>Criando elementos DOM</h1>
+    </header>
+    <main>
+        <p>O DOM nos permite adicionar dinamicamente novos elementos HTML ao docmento. Para isso, precisamos criar o elemento, que podemos fazer utilizando um <strong>document.createElement().</strong></p>
+        <p>Para adicionar conteúdo ao elemento, usamos newElement.innerHTML = </p>
+        <p>Para adicionar o elemento como um novo nó no DOM: element.appendChild(newElement)</p>
+        <p>Também é possivel clonar um elemento já existente. </p>
+
+        <h2>Vamos aprender a manipular eventos DOM</h2>
+
+        <button onclick="addcontato()">Novo Contato</button>
+        <button onclick="removercontato()">Remover Contato</button>
+        <section id="listacontatos"></section>
+
+    </main>
+    <script src="manipulandodom.js"></script>
+</body>
+</html>
