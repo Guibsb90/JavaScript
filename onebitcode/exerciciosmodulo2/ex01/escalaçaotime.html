@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escalação Time</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>
+            <small class="inicio">Escalação</small> <br> Unidos do Lago Norte
+        </h1>
+        <h2 class="subtitulo">
+            Aqui jogamos pouca bola
+        </h2>
+    </header>
+        <main>
+            <span id="escalar">
+                <h2>Escalar um jogador:</h2>
+                <input type="text" name="nomejogador" id="nomejogador" placeholder="Nome"> <br> <br>
+                <input type="text" name="posiçaojogador" id="posiçaojogador" placeholder="Posiçao "> <br><br>
+                <input type="text" name="camisajogador" id="camisajogador" placeholder="Número da camisa "><br><br><button onclick="addjogador()">adicionar jogador</button> 
+                
+                
+            </span>
+            <span id="retirar">
+                <h2>Excluir um jogador:</h2>
+                <input type="text" name="excluir" id="excluir" placeholder="Número da camisa"><br><br>
+                <button onclick="excluir()">excluir jogador</button>
+
+            </span> 
+                <div id="listatime">
+                <ul></ul>
+            </div>                 
+        </main>
+             
+    <script src="escalaçao.js"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+html{
+    
+    padding: 0px;
+    margin: 0px;
+    height: 99%;
+    width: 99.5%;
+
+}
+body{
+    
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+main{
+    display:flex;
+    position: relative;
+    
+        
+    background-image: url(1920-vista-superior-relvado-verde-fresco-para-futebol-e-campos-de-futebol-ou-campos-de-golfe-para-usar-para-fazer-fundo-ou-papel-de-parede-jardim-grama-verde-fresco-para-a-playground-3d-renderizacao.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 80vw;
+    min-width: 60vw;
+    height: 77.5%;
+    margin: auto;
+    box-shadow: 2px 2px 5px  rgba(0, 0, 0, 0.644);
+    
+}
+div{
+    position: absolute;
+    bottom: 30px;
+    right: 400px;
+    margin: auto;
+    
+    
+}
+aside{
+    background-image: url(1920-vista-superior-relvado-verde-fresco-para-futebol-e-campos-de-futebol-ou-campos-de-golfe-para-usar-para-fazer-fundo-ou-papel-de-parede-jardim-grama-verde-fresco-para-a-playground-3d-renderizacao.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+li{
+     
+    background-color: rgba(255, 255, 255, 0.404);
+}
+header{
+    background-image: url(pngwing.com.png);
+    background-repeat: no-repeat;
+    border: 3px solid black;   
+    text-shadow: 3px 2px 1px rgba(0, 0, 0, 0.356);
+    background-color: rgb(36, 177, 59);
+    background-size: contain;
+    height: 170px;
+    min-width: 100%;
+    max-width: 100vw;
+    box-shadow: 2px 2px 5px  rgba(0, 0, 0, 0.644);
+    position: relative;
+    z-index: auto;
+}
+h1{
+    text-align: center;
+    margin: 0px;
+    padding-top: 40px;
+}
+h2{
+    text-align: center;
+}
+.subtitulo{
+    font-size: 19px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+    
+}
+.inicio{
+    font-weight: lighter;
+}
+span{
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.356);
+    box-shadow: 5px 5px 5px  rgba(0, 0, 0, 0.644);
+    margin: auto;
+    width: 200px;
+    height: 250px;
+    border-radius: 10px;
+    border-color: black;
+    border-style: solid;
+    border-width: 3px;
+    background-color: rgba(127, 255, 212, 0.719);
+}
+
+
+input{
+    position: relative;
+    left: 8px;
+    
+        
+}
+button{
+    position: relative;
+    left: 40px;
+    
+
+}
