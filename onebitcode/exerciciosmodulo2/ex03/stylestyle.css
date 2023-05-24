@@ -1,0 +1,21 @@
+#gameBoard{
+    background-color: black;
+    display: grid;
+    grid-template-rows: 6rem 6rem 6rem;
+    grid-template-columns: 6rem 6rem 6rem;
+    gap: .5rem;
+    margin-bottom: 1.5rem;
+    max-width: 19rem;
+}
+
+#gameBoard span{
+    background-color: rgb(198, 138, 255);
+    cursor: pointer;
+    display: grid;
+    place-content: center;
+    font-size: 5rem;
+}
+
+#gameBoard span.win{
+    background-color: rgb(29, 247, 29);
+}

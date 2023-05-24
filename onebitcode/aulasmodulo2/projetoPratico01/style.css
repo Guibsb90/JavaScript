@@ -1,0 +1,38 @@
+body{
+    background-image: url(melhordomundo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+#copyToClipboard , #clear{
+    width: 70px;
+
+}
+
+div button{
+    margin: 4.7px ;
+    height: 30px;
+    width: 50px;
+    background-color: rgb(82, 209, 82);
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgba(235, 7, 83, 0.822);
+}
+input{
+    color: greenyellow;
+    width: 150px;
+    height: 25px;
+    background-color: rgba(0, 0, 0, 0.445);
+    border-color: gray;
+    border-radius: 10px;
+}
+#calculator{
+    position: relative;
+    top: 250px;
+    
+    border-radius: 10px;
+    background-color:rgba(10, 36, 7, 0.911) ;
+    margin: auto;
+    height: 275px;
+    width: 250px;
+
+}   
