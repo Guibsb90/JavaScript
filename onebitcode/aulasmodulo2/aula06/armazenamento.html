@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Armazenamento no navegador</title>
+  </head>
+  <body>
+    <header>
+      <h1>Recursos de Armazenamento do navegador. </h1>
+    </header>
+    <main>
+      <aside>
+        <h2>Session Storage</h2>
+        <p>
+          Forma simples de armazenar dados no navegador durante a navegalçao.
+          Você da um nome pra informação e salva ela.
+        </p>
+        <p>
+          Persistem no mesmo após mudar de página em um mesmo site enquanto a
+          aba/janela estiver aberta.
+        </p>
+        <p>
+          Existem somente enquanto a aba daquele site está aberta, ao fechar o
+          sessionStorage é limpo.
+        </p>
+      </aside>
+      <aside>
+        <h2>Local Storage</h2>
+        <p>
+          Dados armazenados no navegador que persistem mesmo após fechar a
+          aba/janela do navegador.
+        </p>
+        <p>
+          Existem "para sempre" até serem removidos, não possuem data de
+          expiração.
+        </p>
+      </aside>
+      <aside>
+        <h2>Cookies</h2>
+        <p>
+          Dados armazenados em pequenos arquivos de texto no computador do
+          cliente.
+        </p>
+        <p>Podem possuir uma data de expiração.</p>
+        <p>
+          A forma mais tradicional de permitir "lembrar" de informações mesmo
+          depois de fechar o navegador.
+        </p>
+        <p>
+          São enviados na requisições e podem existir no servidor, sendo
+          devolvidos quando uma página html for solicitada.
+        </p>
+        <p>É o único que funciona no backend.</p>
+        <a href="armazenamento2.html">Parte 2</a>
+      </aside>
+    </main>
+  </body>
+</html>
