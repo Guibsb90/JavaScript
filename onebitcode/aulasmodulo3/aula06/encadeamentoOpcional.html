@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encadeamento Opcional</title>
+  </head>
+  <body>
+    <main>
+      <header><h1>Encadeamento Opcional</h1></header>
+      <aside>
+        <p>
+          O operador de encadeamento opcional permite que a gente leia
+          propriedades internas de uma cadeia de objetos sem que a validação de
+          cada referência da cadeia seja realizada. O operador convencional é o
+          . (ponto final). Um exemplo seria window.document.querySelector (os
+          pontos são operadores de encadeamento).
+        </p>
+        <p>O operador de encadeamento opcional é uma ? seguida do .</p>
+        <p>
+          Com o encadeamento normal, o JS valida automaticamente as referências
+          e se alguma não bater, ele lança um erro (cannot read properties of).
+        </p>
+        <p>
+          Já com o encadeamento opcional, ele faz a referência porém , lança
+          null ou undefined.
+        </p>
+      </aside>
+    </main>
+  </body>
+</html>

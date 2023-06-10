@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operador de Coalescência nula</title>
+  </head>
+  <body>
+    <main>
+      <header><h1>Operador de Coalescência nula</h1></header>
+      <aside><p>É um operador lógico que retorna o seu operando do lado direito quando o seu operador do lado esquerdo é null ou undefined. Caso contrário, ele retorna o seu operando do lado esquerdo.</p>
+      <p>Utiliza dois pontos de interrogação ??</p>
+      <p>Vale destacar que, diferente dos outros operadores lógicos, ele não da erro em expressões falsy.</p>
+      <p>Ex:
+        <pre>
+          let a = 0 // 0 no JS é considerado false
+
+          let c = a||42  // c será 42
+          c = a??42   // c será 0, pois 0 é falsy mas nao nullish
+          c = null??42  // c será 42
+        </pre>
+      </p>
+    </aside>
+    </main>
+  </body>
+</html>
