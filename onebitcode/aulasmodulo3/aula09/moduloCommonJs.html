@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Módulos CommonJs</title>
+  </head>
+  <body>
+    <main>
+      <header><h1>Módulos CommonJS</h1></header>
+      <aside>
+        <p>Existem duas formas de se trabalhar com módulos em Js. Uma delas é com CommonJS.</p>
+        <pre>
+Para utilizar os módulos com CommonJS, se criam 2 ou mais arquivos para cada função
+ou blocos de funções existentes em cada módulo e é necessário exportar o módulo, dessa forma:
+
+      <strong>module.exports = (nomeDoModulo)</strong>
+
+Para chamar o módulo que exportamos, precisamos colocar o módulo numa variavel, dessa forma:
+
+      <strong>const (nomeDaVariavel) = require(""./render")</strong> onde a função require recebe como 
+      parâmetro o local onde está armazenado o módulo que iremos usar.
+
+Exemplo:
+
+      <strong>
+        const render = require("./render")
+        const store = require("./require")
+        console.log("Aplicação iniciada")
+        render()
+        store()
+        console.log("Aplicação finalizada.")
+      </strong>
+Desta forma, os modulos render e store serão chamados de seus respectivos arquivos para funcionar em outro arquivo.
+        </pre>
+      </aside>
+    </main>
+  </body>
+</html>
