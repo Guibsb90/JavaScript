@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ES Modules</title>
+</head>
+<body>
+    <main>
+      <header><h1>ES Modules</h1></header> 
+      <p>Para usar o ES Module basta acrecentar a palavra <strong> export</strong> antes da palavra function para exportar o objeto. Ex:</p>
+      <pre>   export function exemplo(exemplo){
+        return a+b
+        }
+      </pre>  
+      <p>Para importar o arquivo, usamos a palavra import com chaves {} e colocar o nome dos objetos que foram exportados e apos fechar a chave, usamos a palavra from e o local de onde está o arquivo entre aspas.E, por fim, temos que ir no HTML e passar na tag script um atributo TYPE=module. Ex:
+      </p>
+      <pre>
+        import {name, label} from "./functions.js"
+
+  <strong>E, no html:</strong>
+
+      script type="module">exemplo.js
+      </pre>
+    </main>
+</body>
+</html>
